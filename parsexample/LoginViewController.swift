@@ -47,8 +47,8 @@ class LoginViewController: UIViewController {
                     UIAlertView(title: "Signup Failed", message: errorString, delegate: nil, cancelButtonTitle: "Close").show()
                 }
                 else {
-                    // Hooray! Let them use the app now.
-                    // self.goToChatView()
+                    //println(PFUser.currentUser()?.email)
+                    self.goToChatView()
                 }
             }
         }
